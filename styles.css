@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, Lucida ;
+    display:grid;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('food.jpg');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;    
+}
+
+.display{
+    display:flex;
+    width: 95%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu,.order-summary{
+    margin: 20px 0;
+}
+
+
+.food-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 30px;
+    margin-right: 25px;
+    border-radius: 5px;
+    display:flex;
+    flex-wrap: wrap;
+    width: 200%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.food-details {
+    margin-left: 20px;
+    display: grid;
+    align-items: center;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+/* Responsive Design for Mobile Phones */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px;
+        background-attachment: scroll;
+    }
+
+    .display {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .nav h2 {
+        margin-bottom: 20px;
+    }
+
+    .food-item {
+        margin: 10px;
+        width: 90%;
+    }
+
+    .food-details {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Responsive Design for Tablets and Small Laptops */
+@media (max-width: 1024px) and (min-width: 769px) {
+    body {
+        height: auto;
+        padding: 20px;
+        background-attachment: scroll;
+    }
+
+    .display {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .nav h2 {
+        margin-bottom: 15px;
+    }
+
+    .food-item {
+        margin: 10px;
+        width: 85%;
+    }
+
+    .food-details {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Larger screens like Desktops and Laptops */
+@media (min-width: 1025px) {
+    body {
+        height: auto;
+        padding: 20px;
+        background-attachment: scroll;
+    }
+
+    .display {
+        width: 85%;
+        justify-content: space-evenly;
+    }
+
+    .food-item {
+        width: 100%;
+    }
+    
+}

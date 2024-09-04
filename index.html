@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    
+    <div class="container">
+        <h1 style="color: aliceblue;text-align: center;text-shadow: 2px 2px;font-size:50px;">Food Ordering Site</h1>
+        <div class="display" id="display">
+            <div class="nav" id="nav" style="margin-top: 200px;">
+                <h2><a href="#menu-section" style="color: white; ">Menu</a></h2>
+                <h2><a href="#order-section" style="color: white; ">Order Summary</a></h2>                
+                <h2><a href="#place-order-btn" style="color: white; ">Place Order</a></h2>
+            </div>
+            <div class="content" id="content">
+                <section id="menu-section">
+                    <div class="menu" id="menu"> </div>
+                </section >
+                <section id="order-section">
+                    <div class="order-summary" id="order-summary" style="color: aliceblue; margin-left: 25px;">
+                        <h2 style="color: aliceblue;">Order Summary</h2>
+                        <h3 id="order-list"></h3>
+                        <p id="total-price">Total Price: Rs.0</p>
+                        <button id="place-order-btn" >Place Order</button>
+                    </div>
+                </section >
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
